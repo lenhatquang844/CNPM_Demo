@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lễ Hội Pháo Hoa 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: #f5f7fa;
+        }
+
+        header {
+            background: #2563eb;
+            color: white;
+            padding: 40px 0;
+        }
+
+            header img {
+                width: 100%;
+                max-height: 350px;
+                object-fit: cover;
+                display: block;
+            }
+
+        section {
+            padding: 50px 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 25px 35px;
+            border-radius: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background: #1d4ed8;
+            }
+
+        form {
+            margin-top: 40px;
+            display: none;
+        }
+
+        input {
+            padding: 16px;
+            margin: 13px;
+            width: 250px;
+        }
+
+        /* Bảng danh sách */
+        #list {
+            margin-top: 40px;
+            display: none;
+        }
+
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        th {
+            background: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lễ Hội Pháo Hoa 2025</h1>
+        <p>2/9/2025 - Trung tâm Tp.Đà Nẵng</p>
+        <!-- Ảnh banner sự kiện -->
+        <img src="https://xdcs.cdnchinhphu.vn/446259493575335936/2024/3/31/ph-17118659301061352617316.jpg" alt="Lễ hội sự kiện pháo hoa 2025">
+    </header>
+
+    <section>
+        <h2>Chào mừng bạn!</h2>
+        <p>Lễ hội bắn pháo hoa quốc tế 2025</p>
+
+        <!-- Nút đăng ký và danh sách -->
+        <a href="#" class="btn" onclick="document.getElementById('form').style.display='block'; document.getElementById('list').style.display='none'">Đăng ký ngay</a>
+        <a href="#" class="btn" onclick="document.getElementById('list').style.display='block'; document.getElementById('form').style.display='none'">Danh sách đăng ký</a>
+
+        <!-- Form đăng ký -->
+        <form id="form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký!');">
+            <div>
+                <input type="text" placeholder="Họ và tên" required>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn">Gửi đăng ký</button>
+        </form>
+
+        <!-- Danh sách người đăng ký -->
+        <div id="list">
+            <h3>Danh sách người đăng ký</h3>
+            <table>
+                <tr>
+                    <th>Họ và tên</th>
+                    <th>Email</th>
+                    <th>Ngày đăng ký</th>
+                    <th>Trạng thái</th>
+                </tr>
+                <tr>
+                    <td>Lê Nhật Quang</td>
+                    <td>nhatquangle1@gmail.com</td>
+                    <td>2025-08-23</td>
+                    <td class="success">Đăng ký thành công</td>
+                </tr>
+                <tr>
+                    <td>Võ Thành Việt</td>
+                    <td>vietvo123@gmail.com</td>
+                    <td>2025-08-22</td>
+                    <td class="success">Đăng ký thành công</td>
+                </tr>
+                <tr>
+                    <td>Hoàng Thành Lộc</td>
+                    <td>lochoang123@gmail.com</td>
+                    <td>2025-08-13</td>
+                    <td class="success">Đăng ký thành công</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
